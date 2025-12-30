@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import { CrossZoneLink } from "./components/CrossZoneLink";
 
+export const dynamic = "force-dynamic";
+
 async function heavyComputation() {
   await new Promise((resolve) => setTimeout(resolve, 1500));
 
